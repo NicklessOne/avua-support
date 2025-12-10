@@ -1,0 +1,125 @@
+name: 🐛 Bug Report / Relatar Bug
+description: Report a bug or issue with Avua / Relatar um bug ou problema com a Avua
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Bug Report / Relatar Bug
+        **EN:** Thank you for taking the time to report a bug! Please fill out the form below.
+        **PT:** Obrigado por reportar um bug! Por favor, preencha o formulário abaixo.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language / Idioma
+      description: Select your preferred language / Selecione seu idioma preferido
+      options:
+        - 🇺🇸 English (EN)
+        - 🇧🇷 Português (PT)
+    validations:
+      required: true
+
+  - type: input
+    id: current_page
+    attributes:
+      label: Current Page / Página Atual
+      description: |
+        **EN:** The URL of the page where you encountered the bug
+        **PT:** A URL da página onde você encontrou o bug
+      placeholder: "https://avua.com/..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description / Descrição
+      description: |
+        **EN:** Describe the bug clearly and concisely.
+        **PT:** Descreva o bug de forma clara e concisa.
+      placeholder: |
+        EN: The application crashes when I click the submit button...
+        PT: O aplicativo trava quando clico no botão enviar...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce / Passos para Reproduzir
+      description: |
+        **EN:** How can we reproduce this bug?
+        **PT:** Como podemos reproduzir este bug?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior / Comportamento Esperado
+      description: |
+        **EN:** What should happen?
+        **PT:** O que deveria acontecer?
+      placeholder: |
+        EN: The form should submit successfully...
+        PT: O formulário deveria ser enviado com sucesso...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior / Comportamento Atual
+      description: |
+        **EN:** What actually happens?
+        **PT:** O que realmente acontece?
+      placeholder: |
+        EN: The application crashes and shows an error...
+        PT: O aplicativo trava e mostra um erro...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity / Gravidade
+      description: How severe is this bug? / Qual a gravidade deste bug?
+      options:
+        - 🔴 Critical / Crítico (System unusable / Sistema inutilizável)
+        - 🟠 High / Alta (Major functionality broken / Funcionalidade principal quebrada)
+        - 🟡 Medium / Média (Feature not working / Funcionalidade não funciona)
+        - 🟢 Low / Baixa (Minor issue / Problema menor)
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment / Ambiente
+      description: |
+        **EN:** Browser, OS, Device (e.g., Chrome 120, Windows 11, Desktop)
+        **PT:** Navegador, SO, Dispositivo (ex: Chrome 120, Windows 11, Desktop)
+      placeholder: "Chrome 120, Windows 11, Desktop"
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Capturas de Tela
+      description: |
+        **EN:** If applicable, add screenshots to help explain the problem.
+        **PT:** Se aplicável, adicione capturas de tela para ajudar a explicar o problema.
+      placeholder: Drag and drop images here / Arraste e solte imagens aqui
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context / Contexto Adicional
+      description: |
+        **EN:** Add any other context about the problem.
+        **PT:** Adicione qualquer outro contexto sobre o problema.

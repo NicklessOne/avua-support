@@ -1,0 +1,103 @@
+name: 🎉 Praise / Elogios
+description: Share what you love about Avua / Compartilhe o que você ama na Avua
+title: "[PRAISE] "
+labels: ["praise", "positive-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎉 Praise / Elogios
+        **EN:** We're thrilled to hear what you love about Avua! Thank you for taking the time to share positive feedback.
+        **PT:** Estamos felizes em saber o que você ama na Avua! Obrigado por dedicar tempo para compartilhar feedback positivo.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language / Idioma
+      description: Select your preferred language / Selecione seu idioma preferido
+      options:
+        - 🇺🇸 English (EN)
+        - 🇧🇷 Português (PT)
+    validations:
+      required: true
+
+  - type: input
+    id: current_page
+    attributes:
+      label: Current Page / Página Atual (Optional)
+      description: |
+        **EN:** The URL of the page related to your praise
+        **PT:** A URL da página relacionada ao seu elogio
+      placeholder: "https://avua.com/..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: What do you love? / O que você ama?
+      description: What aspect of Avua impressed you? / Qual aspecto da Avua te impressionou?
+      options:
+        - ✨ Specific Feature / Funcionalidade Específica
+        - 🎨 Design / Design
+        - ⚡ Performance / Desempenho
+        - 💡 Innovation / Inovação
+        - 🤝 Support / Suporte
+        - 📱 Mobile Experience / Experiência Mobile
+        - 🎯 Overall Experience / Experiência Geral
+        - 💼 Professional Use / Uso Profissional
+        - 🌟 Other / Outro
+    validations:
+      required: true
+
+  - type: textarea
+    id: praise
+    attributes:
+      label: Your Praise / Seus Elogios
+      description: |
+        **EN:** Tell us what you love! What made you happy? What exceeded your expectations?
+        **PT:** Conte-nos o que você ama! O que te deixou feliz? O que superou suas expectativas?
+      placeholder: |
+        EN: I absolutely love how...
+        PT: Eu adoro como...
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact / Impacto
+      description: |
+        **EN:** How has Avua positively impacted you or your work?
+        **PT:** Como a Avua impactou positivamente você ou seu trabalho?
+      placeholder: |
+        EN: Avua has helped me...
+        PT: A Avua me ajudou a...
+
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Would you recommend Avua? / Você recomendaria a Avua?
+      description: |
+        **EN:** Would you recommend Avua to others? Why?
+        **PT:** Você recomendaria a Avua para outros? Por quê?
+      placeholder: |
+        EN: Yes, I would recommend it because...
+        PT: Sim, eu recomendaria porque...
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Capturas de Tela
+      description: |
+        **EN:** Share screenshots of what you love (optional).
+        **PT:** Compartilhe capturas de tela do que você ama (opcional).
+      placeholder: Drag and drop images here / Arraste e solte imagens aqui
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Thoughts / Pensamentos Adicionais
+      description: |
+        **EN:** Anything else you'd like to share?
+        **PT:** Algo mais que você gostaria de compartilhar?

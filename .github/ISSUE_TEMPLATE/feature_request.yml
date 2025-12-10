@@ -1,0 +1,100 @@
+name: ✨ Feature Request / Sugestão de Funcionalidade
+description: Suggest a new feature or improvement / Sugira uma nova funcionalidade ou melhoria
+title: "[FEATURE] "
+labels: ["enhancement", "feature-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Feature Request / Sugestão de Funcionalidade
+        **EN:** Thank you for suggesting a new feature! Please describe it below.
+        **PT:** Obrigado por sugerir uma nova funcionalidade! Por favor, descreva-a abaixo.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language / Idioma
+      description: Select your preferred language / Selecione seu idioma preferido
+      options:
+        - 🇺🇸 English (EN)
+        - 🇧🇷 Português (PT)
+    validations:
+      required: true
+
+  - type: input
+    id: current_page
+    attributes:
+      label: Current Page / Página Atual (Optional)
+      description: |
+        **EN:** The URL of the page related to this feature request
+        **PT:** A URL da página relacionada a esta sugestão
+      placeholder: "https://avua.com/..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Problema
+      description: |
+        **EN:** What problem does this feature solve? What's the use case?
+        **PT:** Que problema esta funcionalidade resolve? Qual é o caso de uso?
+      placeholder: |
+        EN: I'm always frustrated when...
+        PT: Sempre fico frustrado quando...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution / Solução Proposta
+      description: |
+        **EN:** Describe the solution you'd like to see.
+        **PT:** Descreva a solução que você gostaria de ver.
+      placeholder: |
+        EN: I would like to have a feature that...
+        PT: Eu gostaria de ter uma funcionalidade que...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives / Alternativas
+      description: |
+        **EN:** Have you considered any alternative solutions or workarounds?
+        **PT:** Você considerou alguma solução alternativa ou contorno?
+      placeholder: |
+        EN: I've tried using... but it doesn't work because...
+        PT: Tentei usar... mas não funciona porque...
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority / Prioridade
+      description: How important is this feature to you? / Quão importante é esta funcionalidade para você?
+      options:
+        - 🔴 Critical / Crítica (Blocking my work / Bloqueando meu trabalho)
+        - 🟠 High / Alta (Very important / Muito importante)
+        - 🟡 Medium / Média (Would be nice to have / Seria bom ter)
+        - 🟢 Low / Baixa (Not urgent / Não urgente)
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups or Examples / Mockups ou Exemplos
+      description: |
+        **EN:** Add any mockups, screenshots, or examples that help explain your idea.
+        **PT:** Adicione mockups, capturas de tela ou exemplos que ajudem a explicar sua ideia.
+      placeholder: Drag and drop images here / Arraste e solte imagens aqui
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context / Contexto Adicional
+      description: |
+        **EN:** Add any other context or information about the feature request.
+        **PT:** Adicione qualquer outro contexto ou informação sobre a sugestão de funcionalidade.
